@@ -1,7 +1,7 @@
 dist: xenial
 language: ruby
 rvm:
-- 2.5.5
+- 2.5.7
 cache:
   bundler: true
 addons:
@@ -14,6 +14,20 @@ matrix:
   fast_finish: true
 env:
   global:
-  - TEST_REPO=
-  - CORE_REPO=
-  - GEM_REPOS=
+  - CORE_REPO=jrafanie/manageiq@load_graphql_in_only_ui_api_processes
+  matrix:
+  - TEST_REPO=manageiq-api
+  - TEST_REPO=manageiq-ui-classic
+  - TEST_REPO=manageiq-providers-amazon
+  - TEST_REPO=manageiq-providers-azure
+  - TEST_REPO=manageiq-providers-foreman
+  - TEST_REPO=manageiq-providers-google
+  - TEST_REPO=manageiq-providers-kubernetes
+  - TEST_REPO=manageiq-providers-kubevirt
+  - TEST_REPO=manageiq-providers-lenovo
+  - TEST_REPO=manageiq-providers-openshift
+  - TEST_REPO=manageiq-providers-openstack
+  - TEST_REPO=manageiq-providers-ovirt
+  - TEST_REPO=manageiq-providers-redfish
+  - TEST_REPO=manageiq-providers-scvmm
+  - TEST_REPO=manageiq-providers-vmware
