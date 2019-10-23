@@ -11,7 +11,6 @@ matrix:
   fast_finish: true
 env:
   global:
-  - GEM_REPOS=azure-armrest#386
   - CORE_REPO=manageiq#19370
   matrix:
   - TEST_REPO=manageiq-api
