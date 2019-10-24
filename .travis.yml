@@ -11,8 +11,9 @@ matrix:
   fast_finish: true
 env:
   global:
-  - CORE_REPO=manageiq#19370
+  - CORE_REPO=jrafanie/manageiq@upgrade_memoist
   matrix:
+  - TEST_REPO=jrafanie/manageiq@upgrade_memoist
   - TEST_REPO=manageiq-api
   - TEST_REPO=manageiq-ui-classic
   - TEST_REPO=manageiq-consumption
