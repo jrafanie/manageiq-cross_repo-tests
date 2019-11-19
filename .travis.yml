@@ -14,10 +14,12 @@ matrix:
   fast_finish: true
 env:
   global:
-  - CORE_REPO=jrafanie/manageiq@load_graphql_in_only_ui_api_processes
+  - CORE_REPO=carbonin/manageiq@add_missing_workers_to_worker_types
   matrix:
   - TEST_REPO=manageiq-api
   - TEST_REPO=manageiq-ui-classic
+  - TEST_REPO=manageiq-automation_engine
+  - TEST_REPO=manageiq-content
   - TEST_REPO=manageiq-providers-amazon
   - TEST_REPO=manageiq-providers-azure
   - TEST_REPO=manageiq-providers-foreman
