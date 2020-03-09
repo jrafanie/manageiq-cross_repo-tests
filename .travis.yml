@@ -18,7 +18,6 @@ env:
   - REPOS=manageiq-schema#314
   matrix:
   - TEST_REPO=manageiq-schema#314
-  - TEST_REPO=manageiq#18165
   - TEST_REPO=manageiq-api#770
   - TEST_REPO=manageiq-ui-classic#6742
   - TEST_REPO=manageiq-automation_engine
