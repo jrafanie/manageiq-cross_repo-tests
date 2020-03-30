@@ -14,9 +14,9 @@ matrix:
   fast_finish: true
 env:
   global:
-  - REPOS=jrafanie/manageiq@rails-5-2_47a6b56ab_before_only_add
+  - REPOS=jrafanie/manageiq@rails-5-2_48e0d011_before_first_stab
   matrix:
-  - TEST_REPO=jrafanie/manageiq@rails-5-2_47a6b56ab_before_only_add
+  - TEST_REPO=jrafanie/manageiq@rails-5-2_48e0d011_before_first_stab
   - TEST_REPO=manageiq-api
   - TEST_REPO=manageiq-ui-classic
   - TEST_REPO=manageiq-automation_engine
